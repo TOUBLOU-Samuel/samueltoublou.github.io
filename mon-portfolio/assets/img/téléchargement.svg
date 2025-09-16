@@ -1,0 +1,50 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Samuel Toublou - Avatar">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0ea5a4"></stop>
+      <stop offset="100%" stop-color="#2563eb"></stop>
+    </linearGradient>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="#0b1226" flood-opacity="0.12"></feDropShadow>
+    </filter>
+    <mask id="circleMask">
+      <rect width="100%" height="100%" fill="white"></rect>
+      <circle cx="400" cy="300" r="260" fill="black"></circle>
+    </mask>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#0f1724"></rect>
+
+  <!-- Blurred shapes for subtle texture -->
+  <g opacity="0.12">
+    <circle cx="140" cy="120" r="120" fill="#ffffff"></circle>
+    <circle cx="700" cy="680" r="200" fill="#ffffff"></circle>
+  </g>
+
+  <!-- Main rounded card -->
+  <g transform="translate(80,60)">
+    <rect x="0" y="0" width="640" height="640" rx="36" fill="#071026" filter="url(#softShadow)"></rect>
+    <!-- Circular portrait area -->
+    <circle cx="320" cy="220" r="220" fill="url(#g1)"></circle>
+    <!-- White ring -->
+    <circle cx="320" cy="220" r="234" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="4"></circle>
+
+    <!-- Stylized initials -->
+    <g transform="translate(0,0)">
+      <text x="320" y="270" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="700" font-size="160" text-anchor="middle" fill="#ffffff" letter-spacing="-6">ST</text>
+    </g>
+
+    <!-- Small info block -->
+    <g transform="translate(60,480)">
+      <rect x="0" y="0" width="520" height="120" rx="12" fill="#0b1b2b"></rect>
+      <text x="20" y="44" font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" fill="#9fb5d9" font-weight="600">
+        Samuel Toublou
+      </text>
+      <text x="20" y="78" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" fill="#7f98c0">
+        Data Analyst • Excel • Data Viz
+      </text>
+    </g>
+  </g>
+</svg>
